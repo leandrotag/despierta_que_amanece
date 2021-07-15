@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+   *{ 
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: 'Hammersmith One', sans-serif;
+  }
+
+textarea{
+  width: 500px;
+  height: 100px;
+}
+
+.container__home{
+  margin: auto;
+  padding: auto;
+  text-decoration: none;
+  color: darkviolet;
+  text-transform: uppercase;
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.container__home h2{
+  font-size: 30px;
+}
+
+ .container__text {
+  margin-right: 100px;
+  margin-left: 50px;
+  }
+

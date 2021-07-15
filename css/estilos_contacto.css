@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+.back{
+  text-align: left;
+}
+.formulario{
+  margin-left: 50px;
+}
+.formulario input{
+  border-radius: 10px;
+  width: 200px;
+}
+#id{
+  width: 10px;
+}
+
+#suscripcion{
+  margin-left: 50px;
+}
+::placeholder{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px;
+}
+
+.formulario__inputs input{
+  background:rgb(188, 165, 226);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px;
+}
+
+.inputs input:focus{
+  background:rgb(115, 79, 139);
+  }
+
+.buttons{
+  margin-left: 50px;
+}
+
+.maps{
+  float: right;
+  margin-top: 250px;
+  margin-bottom: 20px;
+}

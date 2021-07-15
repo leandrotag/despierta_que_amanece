@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flexContainer {
+  margin-top: auto;
+  padding: 80px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  /*  background: rgb(162,129,180);
+  background: radial-gradient(circle, rgba(162,129,180,1) 0%, rgba(241,114,246,1) 0%, rgba(240,180,218,1) 0%, rgba(251,251,227,1) 15%, rgba(244,155,215,1) 54%, rgba(198,123,187,1) 100%); */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-height: 100px;
+}
+
+.flexContainer__titulo {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Indie Flower', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+  margin-right: 120px;
+  margin-top: 40px;
+}
+
+.flexContainer__titulo a {
+  text-decoration: none;
+  color: white;
+}
+
+.flexContainer__titulo h1 {
+  font-size: 30px;
+}
+
+.item {
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.flexContainer__nav {
+  margin-right: 300px;
+  text-align: center;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Boogaloo', cursive;
+  display: inline-block;
+}
+
+li a {
+  color: black;
+}
+
+li a:hover {
+  color: #dd86c0;
+}
+
+li h2 {
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 1rem;
+}
+
+a:visited {
+  color: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.SabiasQue {
+  margin-right: 230px;
+  margin-left: 230px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.button__whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  background: transparent;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.button__whatsapp:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.footer {
+  background: #eebcbc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .1rem;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.footer img {
+  margin-bottom: 30px;
+}
+
+/* Phone */
+@media only screen and (max-width: 767px) {
+  .flexContainer {
+    max-width: 767px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  .flexContainer__nav li {
+    display: block;
+    max-width: 80%;
+    font-size: 12px;
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+  .flexContainer__titulo {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .flexContainer {
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .flexContainer__nav li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    max-width: 50%;
+    font-size: 15px;
+  }
+  .flexContainer__titulo {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

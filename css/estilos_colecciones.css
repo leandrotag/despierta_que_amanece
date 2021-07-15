@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-style: 'Open Sans Condensed', sans-serif;
+}
+
+.container__home{
+  margin: 10px;
+  text-decoration: none;
+  color: darkviolet;
+  text-transform: uppercase;
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+ justify-content: center;
+}
+.container__home h2{
+  font-size: 30px;}
+
+.colecciones {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-auto-rows: 350px;
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.colecciones img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 300ms;
+}
+
+.colecciones img:hover{
+transform: scale(1.05);
+}
+
+.colecciones .imagenes h2{
+color: rgb(31, 161, 161);
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 30px;
+  }
