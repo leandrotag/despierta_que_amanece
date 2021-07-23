@@ -184,7 +184,7 @@ textarea {
 		li {
 			display: block;
 			max-width: 80%;
-			font-size: 12px;
+			font-size: 15px;
 			margin-left: 20px;
 			padding-top: 10px;
 			margin-top: 0px;
@@ -214,10 +214,12 @@ textarea {
 	}
 	.footer {
 		padding: 20px ;
-		font-size: 20px;
 		color: black;
-		padding-bottom: 10px;
-	}
+		padding-bottom: 10px;}
+
+	.footer p{
+			font-size: 15px;
+		}
 	.colecciones {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -262,7 +264,7 @@ textarea {
 			display: -ms-inline-flexbox;
 			display: inline-flex;
 			max-width: 50%;
-			font-size: 15px;
+			font-size: 17px;
 		}
 	}
 	textarea {
@@ -278,8 +280,12 @@ textarea {
 		}
 	}
 	.nav-link {
-		margin-right: 50px;
+		margin-right: 40px;
 	}
+	.SabiasQue {
+		margin-right: 50px;
+		margin-left: 50px;}
+
 	.footer {
 		margin-top: 50px;
 	}
