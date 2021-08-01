@@ -78,26 +78,26 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0.1rem;
   text-align: center;
   font-family: "Boogaloo", cursive;
   font-size: 15px;
   color: black;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-transform: uppercase;
 }
 .footer img {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   transition: all 300ms;
 }
 .footer img:hover {
   transform: scale(1.08);
 }
 .footer p {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 #copyright {
@@ -191,6 +191,7 @@ textarea {
 
 .formulario {
   text-align: center;
+  margin-top: 50px;
 }
 .formulario input {
   text-align: center;
@@ -212,7 +213,6 @@ textarea {
 
 .maps {
   text-align: center;
-  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -289,9 +289,10 @@ textarea {
     border-radius: 10px;
   }
 
-  .maps {
-    width: 400px;
-    height: 300px;
+  .maps iframe {
+    margin-top: 20px;
+    width: 80%;
+    height: 80%;
   }
 
   .header__icon {
