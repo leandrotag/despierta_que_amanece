@@ -169,7 +169,6 @@ textarea {
 	width: 500px;
 	height: 100px;
 	border-radius: 10px;
-	margin-left: 50px;
 }
 .container__text {
 	margin-right: 100px;
@@ -179,28 +178,32 @@ textarea {
 .back {
 	text-align: left;
 }
+
+::placeholder {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+
 .formulario {
-	margin-top: 50px;
-	margin-left: 50px;
+	text-align: center;
 	input {
+		text-align: center;
 		border-radius: 10px;
 		width: 200px;
 	}
 }
 .suscripcion {
-	margin-left: 50px;
+	text-align: center;
 }
-::placeholder {
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 15px;
+.formulario__textarea{
+	text-align: center;
 }
-.buttons {
-	margin-left: 50px;
-	margin-bottom: 20px;
+.buttons{
+	text-align: center;
 }
 .maps{
-	float: right;
-	margin-right: 10px;
+	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
@@ -264,17 +267,15 @@ textarea {
 			margin-left: 20px;
 	}
 	textarea {
-		width: 200px;
-		height: 200px;
+		width: 250px;
+		height: 150px;
 		border-radius: 10px;
-		margin-left: 50px;
 	}
 
-	.suscripcion{
-		margin-left: 50px;
-		margin-right: 50px;
+	.maps{
+		width: 400px;
+		height: 300px;
 	}
-
 	.header__icon {
 		display: none;
 	}
@@ -311,11 +312,14 @@ textarea {
 		grid-gap: 20px;
 		margin-left: 50px;
 	  }
+
+	.formulario{
+		margin-top: 50px;
+	}  
 	textarea {
-		width: 200px;
+		width: 400px;
 		height: 100px;
 		border-radius: 10px;
-		margin-left: 50px;
 	}
 	.carousel-inner {
 		img {
