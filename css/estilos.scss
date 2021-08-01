@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
@@ -111,24 +110,58 @@ li {
 	text-transform: none;
 }
 .colecciones {
+	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 350px;
+	-ms-grid-columns: (1fr)[3];
+		grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 400px;
 	padding: 0px;
 	grid-gap: 20px;
 	margin-bottom: 20px;
-	margin-left: 20px;
+	margin-left: 100px;
 	margin-right: 20px;
-	margin-top: 50px;
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		transition: all 300ms;
-		&:hover {
+	margin-top: 100px;
+	font-family: 'Boogaloo', cursive;
+	font-size: 17px;
+  }
+
+  .colecciones img {
+	transition: all 300ms;
+  }
+  .colecciones img:hover {
+	-webkit-transform: scale(1.05);
 			transform: scale(1.05);
-		}
+  }
+
+.card-body{
+	padding-bottom: 0;}
+
+	.card-text{
+		text-align: center;
+	  }
+
+	  .tachado {
+		text-decoration:black double line-through;
+		line-height : 10px;
+		font-family: 'Boogaloo', cursive;
+		font-size: 15px;
+		color: rgb(199, 10, 10);
+		margin-right: 15px;
+	  }
+
+.table{
+	text-align: center;}
+
+	.aclaraciones{
+		text-align: center;
+		font-family: 'Hammersmith One', sans-serif;
 	}
+	
+.titulo__tabla h5{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 50px;
 }
 textarea {
 	width: 500px;
@@ -154,7 +187,7 @@ textarea {
 		width: 200px;
 	}
 }
-#suscripcion {
+.suscripcion {
 	margin-left: 50px;
 }
 ::placeholder {
@@ -165,7 +198,7 @@ textarea {
 	margin-left: 50px;
 	margin-bottom: 20px;
 }
-.maps {
+.maps{
 	float: right;
 	margin-right: 10px;
 	margin-top: 50px;
@@ -203,6 +236,7 @@ textarea {
 		img {
 			width: 100%;
 			height: 100%;
+			margin-right: 15px;
 		}
 	}
 	.SabiasQue {
@@ -220,12 +254,14 @@ textarea {
 	.footer p{
 			font-size: 15px;
 		}
-	.colecciones {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-auto-rows: 150px;
-		padding: 20px;
-		grid-gap: 20px;
+		.colecciones {
+			display: -ms-grid;
+			display: grid;
+			-ms-grid-columns: (1fr)[2];
+				grid-template-columns: repeat(1, 1fr);
+			padding: 20px;
+			grid-gap: 20px;
+			margin-left: 20px;
 	}
 	textarea {
 		width: 200px;
@@ -233,13 +269,12 @@ textarea {
 		border-radius: 10px;
 		margin-left: 50px;
 	}
-	.maps {
-		flex-direction: justify-content;
-		margin-right: 10px;
-		margin-bottom: 20px;
-		justify-content: end;
-		height: 50%;
+
+	.suscripcion{
+		margin-left: 50px;
+		margin-right: 50px;
 	}
+
 	.header__icon {
 		display: none;
 	}
@@ -267,6 +302,15 @@ textarea {
 			font-size: 17px;
 		}
 	}
+	.colecciones {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: (1fr)[2];
+			grid-template-columns: repeat(2, 1fr);
+		padding: 20px;
+		grid-gap: 20px;
+		margin-left: 50px;
+	  }
 	textarea {
 		width: 200px;
 		height: 100px;
