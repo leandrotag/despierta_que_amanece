@@ -303,6 +303,9 @@ textarea {
     grid-gap: 20px;
     margin-left: 20px;
   }
+  .formulario {
+    margin-top: 50px;
+  }
   textarea {
     width: 250px;
     height: 150px;
