@@ -205,7 +205,7 @@ textarea {
 }
 .maps{
 	text-align: center;
-	
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 /* Phone */
@@ -256,8 +256,8 @@ textarea {
 		padding-bottom: 10px;
 	 	p{
 			font-size: 15px;
-		}
-		}
+	}
+	}
 		.colecciones {
 			display: -ms-grid;
 			display: grid;
@@ -279,9 +279,8 @@ textarea {
 	}
 
 	.maps iframe{
-		margin-top: 20px;
-		width: 80%;
-		height: 80%;
+		width: 90%;
+		height: 90%;
 	}
 	.header__icon {
 		display: none;

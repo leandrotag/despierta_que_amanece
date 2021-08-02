@@ -213,6 +213,7 @@ textarea {
 
 .maps {
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -289,9 +290,8 @@ textarea {
   }
 
   .maps iframe {
-    margin-top: 20px;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
   }
 
   .header__icon {
