@@ -276,6 +276,14 @@ textarea {
     font-size: 1rem;
   }
 
+  .SabiasQue {
+    margin-right: 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
+  }
+
   .colecciones {
     display: -ms-grid;
     display: grid;
@@ -321,10 +329,14 @@ textarea {
     font-size: 0.6rem;
   }
 }
+.button__whatsapp {
+  margin-left: 2rem;
+}
+
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
   .flexContainer {
-    padding-right: 1.2rem;
+    padding-right: 1.1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -335,9 +347,12 @@ textarea {
     display: -ms-inline-flexbox;
     display: inline-flex;
     max-width: 50%;
-    font-size: 1.3rem;
-    padding-right: 0.8rem;
-    padding-left: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  #navbarNav {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
   }
 
   .colecciones {
@@ -347,7 +362,8 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     padding: 1.2rem;
     grid-gap: 1.2rem;
-    margin-left: 3.1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .formulario {
@@ -370,17 +386,17 @@ textarea {
   }
 
   .SabiasQue {
-    margin-right: 0.6rem;
-    margin-left: 0.6rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-top: 1.2rem;
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
   }
   .SabiasQue p {
     font-family: "Sarabun", sans-serif;
   }
 
   .footer {
-    margin-top: 3.1rem;
+    margin-top: 4rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
