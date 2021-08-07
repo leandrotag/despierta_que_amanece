@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -193,6 +194,10 @@ textarea {
   font-family: "Sarabun", sans-serif;
   font-weight: 500;
 }
+.container__text .explication {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
 
 .back {
   text-align: left;
@@ -230,6 +235,33 @@ textarea {
   text-align: center;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
+}
+
+.table-2 {
+  margin-bottom: 6rem;
+}
+
+.faqs__title {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.questions {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.answer {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.45);
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 /* Phone */
@@ -310,6 +342,11 @@ textarea {
     margin-right: 0.5rem;
     padding-right: 20px;
     line-height: 1rem;
+  }
+
+  .nav-link.dropdown-toggle {
+    font-size: 1rem;
+    text-align: center;
   }
 
   .maps iframe {
@@ -393,6 +430,12 @@ textarea {
   }
   .SabiasQue p {
     font-family: "Sarabun", sans-serif;
+  }
+
+  .container__text {
+    margin-right: 0.5rem;
+    padding-right: 20px;
+    line-height: 1rem;
   }
 
   .footer {
