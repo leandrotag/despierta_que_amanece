@@ -187,6 +187,7 @@ textarea {
 .container__text .explication {
   font-weight: 700;
   margin-bottom: 2rem;
+  align-items: center;
 }
 
 .back {
@@ -273,6 +274,10 @@ textarea {
     margin-top: 0;
   }
 
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 1rem;
+  }
+
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -327,19 +332,14 @@ textarea {
   }
 
   .container__text {
-    margin-right: 0.5rem;
-    padding-right: 20px;
+    margin-left: 1rem;
+    padding-right: 15px;
     line-height: 1rem;
   }
 
   .nav-link.dropdown-toggle {
     font-size: 1rem;
     text-align: center;
-  }
-
-  .explication {
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
 
   .maps iframe {
@@ -366,7 +366,6 @@ textarea {
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
   .flexContainer {
-    padding-right: 1.1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -379,9 +378,8 @@ textarea {
     font-size: 1rem;
   }
 
-  #navbarNav {
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 3rem;
   }
 
   .colecciones {
@@ -427,6 +425,10 @@ textarea {
     margin-right: 0.5rem;
     padding-right: 20px;
     line-height: 1rem;
+  }
+  .container__text .explication {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .footer {
