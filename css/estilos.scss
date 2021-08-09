@@ -15,10 +15,8 @@
 }
 
 .flexContainer__nav {
-  margin-right: 2rem;
-  margin-left: 3rem;
-}
 
+}
 li {
   text-decoration: none;
   list-style: none;
@@ -49,10 +47,7 @@ li {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0rem;
   padding-left: 0rem;
-}
-
-.nav-link {
-  margin-right: 100px;
+  margin-right: 4.5rem;
 }
 
 .container {
@@ -65,9 +60,9 @@ li {
   margin-top: 1rem;
 }
 
-.SabiasQue {
-  margin-right: 10rem;
-  margin-left: 10rem;
+.SabiasQue{
+  margin-left:3rem;
+  margin-right:3rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
   font-family: 'Hammersmith One', sans-serif;
@@ -136,7 +131,7 @@ p{
   display: grid;
   -ms-grid-columns: 1fr [3];
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center; 
+  justify-items: center; 
   grid-auto-rows: 25rem;
   padding: 0px;
   grid-gap: 1.2rem;
@@ -203,8 +198,6 @@ textarea {
 
 .container__text {
   line-height: 2.5rem;
-  margin-right: 13.9rem;
-  margin-left: 3.1rem;
   margin-top: 3.1rem;
   font-family: 'Sarabun', sans-serif;
   font-weight: 500;
@@ -238,6 +231,7 @@ textarea {
 .btn{
   width: 20rem;
 }
+
 .suscripcion, .formulario__textarea, .buttons {
   text-align: center;
   font-family: 'Sarabun', sans-serif;
@@ -329,16 +323,14 @@ textarea {
   margin-left: 1rem;
 }
 
-  .colecciones {
+  .colecciones{
     display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr [2];
     grid-template-columns: repeat(1, 1fr);
-    justify-content: center; 
     padding: 1.2rem;
     grid-gap: 1.2rem;
-    margin:auto;
-    margin-left: 1.2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   .formulario {
@@ -359,6 +351,10 @@ textarea {
       font-size: 1rem;
       text-align: center;
     }
+.explication{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
   .maps iframe {
     width: 90%;
     height: 90%;
@@ -391,9 +387,8 @@ textarea {
   .flexContainer__nav li {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
     max-width: 50%;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   #navbarNav{
@@ -402,7 +397,6 @@ textarea {
   }
   .colecciones {
     display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr [2];
     grid-template-columns: repeat(2, 1fr);
     padding: 1.2rem;
@@ -410,6 +404,7 @@ textarea {
     margin-left: 3rem;
     margin-right: 3rem;
   }
+
 
   .formulario {
     margin-top: 3.1rem;
@@ -427,7 +422,7 @@ textarea {
   }
 
   .nav-link {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
   }
 
   .SabiasQue{

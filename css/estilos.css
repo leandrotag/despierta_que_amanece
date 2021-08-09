@@ -9,11 +9,6 @@
   padding: 0;
 }
 
-.flexContainer__nav {
-  margin-right: 2rem;
-  margin-left: 3rem;
-}
-
 li {
   text-decoration: none;
   list-style: none;
@@ -42,10 +37,7 @@ li {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0rem;
   padding-left: 0rem;
-}
-
-.nav-link {
-  margin-right: 100px;
+  margin-right: 4.5rem;
 }
 
 .container {
@@ -59,8 +51,8 @@ li {
 }
 
 .SabiasQue {
-  margin-right: 10rem;
-  margin-left: 10rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
   font-family: 'Hammersmith One', sans-serif;
@@ -130,9 +122,7 @@ li {
   display: grid;
   -ms-grid-columns: 1fr [3];
   grid-template-columns: repeat(3, 1fr);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
   grid-auto-rows: 25rem;
   padding: 0px;
   grid-gap: 1.2rem;
@@ -199,8 +189,6 @@ textarea {
 
 .container__text {
   line-height: 2.5rem;
-  margin-right: 13.9rem;
-  margin-left: 3.1rem;
   margin-top: 3.1rem;
   font-family: 'Sarabun', sans-serif;
   font-weight: 500;
@@ -331,16 +319,12 @@ textarea {
   }
   .colecciones {
     display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr [2];
     grid-template-columns: repeat(1, 1fr);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding: 1.2rem;
     grid-gap: 1.2rem;
-    margin: auto;
-    margin-left: 1.2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
   .formulario {
     margin-top: 3.1rem;
@@ -358,6 +342,10 @@ textarea {
   .nav-link.dropdown-toggle {
     font-size: 1rem;
     text-align: center;
+  }
+  .explication {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .maps iframe {
     width: 90%;
@@ -389,9 +377,8 @@ textarea {
   .flexContainer__nav li {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
     max-width: 50%;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   #navbarNav {
     margin-left: 0.2rem;
@@ -399,7 +386,6 @@ textarea {
   }
   .colecciones {
     display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr [2];
     grid-template-columns: repeat(2, 1fr);
     padding: 1.2rem;
@@ -420,7 +406,7 @@ textarea {
     height: 100%;
   }
   .nav-link {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
   }
   .SabiasQue {
     margin-right: 1rem;
