@@ -1,0 +1,32 @@
+@mixin footer{
+    background: $color_footer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    font-family: 'Boogaloo', cursive;
+    font-size: 1rem;
+    color: black;
+    padding-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+@mixin colecciones{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr [3];
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+    grid-auto-rows: 25rem;
+    padding: 0px;
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-left: 6.2rem;
+    margin-right: 1.2rem;
+    margin-top: 6.2rem;
+    font-family:$font_navbar;
+    font-size: 1rem;
+}

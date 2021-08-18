@@ -1,18 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
-
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap');
+@import "main";
+@import "variables";
 
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 .flexContainer__nav {
 
@@ -20,7 +11,7 @@
 li {
   text-decoration: none;
   list-style: none;
-  font-family: 'Boogaloo', cursive;
+  font-family: $font_navbar;
   font-size: 1.6rem;
 }
 
@@ -28,7 +19,7 @@ li {
   .nav-item .active {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    color: #ebaeae;
+    color: $color_navbar;
   }
 
   .nav-link {
@@ -39,7 +30,7 @@ li {
     &:hover {
       -webkit-transform: scale(1.05);
       transform: scale(1.05);
-      color: #ebaeae;
+      color: $color_navbar;
     }
   }
 }
@@ -65,9 +56,8 @@ li {
   margin-right:3rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  font-family: 'Hammersmith One', sans-serif;
 p{
-    font-family: 'Sarabun', sans-serif;
+    font-family: $font_text;
     font-weight: 500;
     text-transform: uppercase;
   }
@@ -88,25 +78,11 @@ p{
 }
 
 .footer {
-  background: #eebcbc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  text-align: center;
-  font-family: 'Boogaloo', cursive;
-  font-size: 1rem;
-  color: black;
-  padding-bottom: 0.6rem;
-  text-transform: uppercase;
-
+@include footer;
   img {
     margin-bottom: 0.6rem;
     -webkit-transition: all 300ms;
     transition: all 300ms;
-
     &:hover {
       -webkit-transform: scale(1.08);
       transform: scale(1.08);
@@ -120,28 +96,14 @@ p{
 }
 
 #copyright {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: $font_forms;
   font-size: 0.8rem;
-  color: #252222;
+  color: $copyright;
   text-transform: none;
 }
 
 .colecciones {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr [3];
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center; 
-  grid-auto-rows: 25rem;
-  padding: 0px;
-  grid-gap: 1.2rem;
-  margin-bottom: 1.2rem;
-  margin-left: 6.2rem;
-  margin-right: 1.2rem;
-  margin-top: 6.2rem;
-  font-family: 'Boogaloo', cursive;
-  font-size: 1rem;
-
+@include colecciones;
   img {
     -webkit-transition: all 300ms;
     transition: all 300ms;
@@ -165,7 +127,7 @@ p{
   -webkit-text-decoration: black double line-through;
   text-decoration: black double line-through;
   line-height: 0.6rem;
-  font-family: 'Boogaloo', cursive;
+  font-family: $font_navbar;
   font-size: 1rem;
   color: #c70a0a;
   margin-right: 1rem;
@@ -177,12 +139,12 @@ p{
 
 .aclaraciones {
   text-align: center;
-  font-family: 'Sarabun', sans-serif;
+  font-family: $font_text;
   font-weight: 500;
 }
 
 .titulo__tabla h5 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: $font_forms;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 3.1rem;
@@ -199,7 +161,7 @@ textarea {
 .container__text {
   line-height: 2.5rem;
   margin-top: 3.1rem;
-  font-family: 'Sarabun', sans-serif;
+  font-family: $font_text;
   font-weight: 500;
 & .explication{
   font-weight: 700;
@@ -213,7 +175,7 @@ textarea {
 }
 
 ::-webkit-input-placeholder, :-ms-input-placeholder, ::-ms-input-placeholder, ::placeholder {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: $font_forms;
   font-size: 1rem;
   text-align: center;
 }
@@ -221,7 +183,7 @@ textarea {
 .formulario {
   text-align: center;
   margin-top: 3,1rem;
-  font-family: 'Sarabun', sans-serif;
+  font-family: $font_text;
   font-weight: 700;
   input {
     text-align: center;
@@ -235,7 +197,7 @@ textarea {
 
 .suscripcion, .formulario__textarea, .buttons {
   text-align: center;
-  font-family: 'Sarabun', sans-serif;
+  font-family: $font_text;
   font-weight: 700;
 }
 
@@ -258,12 +220,12 @@ textarea {
  margin-left: 2rem;
  margin-right: 2rem;
  margin-bottom: 3rem;
- font-family: 'Sarabun', sans-serif;
+ font-family: $font_text;
  font-weight: 700;
  text-align: center;
 }
 .answer{
-  font-family: 'Sarabun', sans-serif;
+  font-family:$font_text;
   font-weight: 400;
   color: rgba(0,0,0,.45);
   margin-left: 3rem;
@@ -347,7 +309,7 @@ textarea {
   }
   .container__text {
     margin-left: 1rem;
-    padding-right: 15px;
+    padding-right: 1rem;
     line-height: 1rem;}
 
     .nav-link.dropdown-toggle{
@@ -358,10 +320,6 @@ textarea {
   .maps iframe {
     width: 90%;
     height: 90%;
-  }
-
-  .header__icon {
-    display: none;
   }
 
   .navbar-toggler {
@@ -430,12 +388,12 @@ textarea {
     margin-top: 1.2rem;
     margin-bottom: 1.5rem;
     p{
-    font-family: 'Sarabun', sans-serif;
+    font-family:$font_text;
   }
   }
   .container__text {
     margin-right: 0.5rem;
-    padding-right: 20px;
+    padding-right: 1.1rem;
     line-height: 1rem;
   & .explication{
     margin-left: 2rem;
