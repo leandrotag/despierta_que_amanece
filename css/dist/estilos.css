@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans+Condensed:wght@300&family=Sarabun:wght@400;500;700&display=swap");
 li {
   text-decoration: none;
   list-style: none;
@@ -28,6 +26,10 @@ li {
   padding-right: 0rem;
   padding-left: 0rem;
   margin-right: 4.5rem;
+}
+
+.header__icon {
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -65,6 +67,53 @@ li {
   transform: scale(1.5);
 }
 
+.card .card-body .span__card {
+  font-size: 1rem;
+  line-height: 0.5rem;
+  text-align: left;
+  display: flex;
+}
+
+.card .card-body .span__card1 {
+  font-size: 1rem;
+  line-height: 0.8rem;
+  display: inline-table;
+  margin-right: 0rem;
+  margin-bottom: 1rem;
+}
+
+.img__addcart {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.eliminarProducto img {
+  display: inline-flex;
+  text-align: right;
+  margin-left: 5rem;
+}
+
+.card_DOM {
+  padding: 0;
+}
+
+.boton_suma {
+  width: 25px;
+  height: 30px;
+}
+
+.boton_resta {
+  width: 25px;
+  height: 30px;
+}
+
+.tu_carrito {
+  font-family: "Boogaloo", cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #033b0a;
+}
+
 .footer {
   background: #eebcbc;
   display: -webkit-box;
@@ -79,6 +128,7 @@ li {
   color: black;
   padding-bottom: 0.6rem;
   text-transform: uppercase;
+  margin-top: 2rem;
 }
 .footer img {
   margin-bottom: 0.6rem;
@@ -205,6 +255,12 @@ textarea {
 
 .btn {
   width: 20rem;
+  background-color: #ebaeae;
+  color: whitesmoke;
+}
+
+.boton-carrito {
+  width: 15rem;
 }
 
 .suscripcion, .formulario__textarea, .buttons {
@@ -244,6 +300,57 @@ textarea {
   color: rgba(0, 0, 0, 0.45);
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+.productPrice p {
+  font-size: 5rem;
+}
+
+.row .p-title {
+  font-size: 5rem;
+}
+
+.table__productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table__productos > img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-right: 1.2rem;
+}
+
+.table__cantidad > input {
+  width: 40px;
+  border-color: #ebaeae;
+  font-size: 16px;
+  margin-right: 2rem;
+  margin-bottom: 1.1rem;
+}
+
+.btn__comprar {
+  width: 6rem;
+  margin-right: 30rem;
+}
+
+.itemCartTotal {
+  margin-left: 30rem;
+}
+
+#cartNumbers {
+  background-color: #206a5d;
+  width: 23px;
+  height: 23px;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+  top: -11px;
+  right: 6px;
+  cursor: pointer;
 }
 
 /* Phone */
@@ -362,11 +469,11 @@ textarea {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     max-width: 50%;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
-    margin-right: 3rem;
+    margin-right: 1.1rem;
   }
 
   .colecciones {
@@ -377,6 +484,10 @@ textarea {
     grid-gap: 1.2rem;
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .buttoncompra .btn {
+    background-color: black;
   }
 
   .formulario {
@@ -395,7 +506,7 @@ textarea {
   }
 
   .nav-link {
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 
   .SabiasQue {

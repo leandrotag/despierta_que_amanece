@@ -15,39 +15,46 @@
 		<img src="media/three-dots-vertical.svg" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" width="50px" height="50px">
 		<div class="flexContainer__nav m-5 collapse navbar-collapse align-self-center" id="navbarNav">						
 			<ul class="flexContainer__nav navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="colecciones.html">COLECCIONES</a>
+				<li class="nav-item ">
+					<a class="nav-link active" href="colecciones.html">COLECCIONES</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="como_comprar.html">COMO COMPRAR</a>
 				</li>
-				<li class="nav-item">
+        <li class="nav-item">
 					<a class="nav-link" href="talles.html">TALLES</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link contacto active" href="contacto.html">CONTACTO</a>
+					<a class="nav-link" href="contacto.html">CONTACTO</a>
 				</li>
 			</ul>
+    </div>
+    <div class="header__icon">
+      <a href= "colecciones.html#carroDeCompras"><img src="media/carrito_2.svg" width="65px" height="65px"></a>
+    </div>
 	</nav>
 	</div>
 <div class="formulario">
-		<form>
+	<form method="post" id="formulario">
+		<div class="alert alert-success d-none" id="mensajeExito">Mensaje enviado con éxito</div>
+		<div class="alert alert-danger d-none" id="mensajeError"></div>
 			<span>*NOMBRE Y APELLIDO</span>
-			<div><input type="text" name="Nombre y Apellido id="Nombre y Apellido" placeholder="Nombre y Apellido"></div> <br>
+			<div><input type="text" name="Nombre y Apellido" id="nombre" value="" placeholder="Nombre y Apellido"></div> <br>
 			<span>*CORREO ELECTRONICO</span>
-			<div><input type="email" name="Mail" id="Mail" placeholder="yosoy@micorreo.com"></div> <br>
+			<div><input type="email" name="mail" id="email" value="" placeholder="yosoy@micorreo.com"></div> <br>
 			<span>TELEFONO DE CONTACTO</span>
-			<div><input type="tel" name="Telefono" id="Telefono" placeholder="Telefono"></div> <br>
+			<div><input type="tel" name="Telefono" id="telefono" placeholder="Telefono"></div> <br>
 	</div>
-	<div class="suscripcion"><input type="checkbox" value="1"> SUSCRIBITE PARA RECIBIR MAILS INFORMATIVOS Y PROMOCIONES</div>
-	<div class="formulario__textarea"><textarea name="CONSULTA" placeholder="Ingresa tu consulta"></textarea></div>
+	<div class="suscripcion"><input type="checkbox" value=""> SUSCRIBITE PARA RECIBIR MAILS INFORMATIVOS Y PROMOCIONES</div>
+	<div class="formulario__textarea"><textarea name="CONSULTA" id="mensaje" name ="mensaje" placeholder="Ingresa tu consulta"></textarea></div>
 	<div class="buttons">
 		<p>* Campos Obligatorios</p>
 		<div class="formulario__inputs">
-			<button type="submit" class="btn btn-outline-dark" value="Enviar">ENVIAR</button>
+			<button type="input" class="btn btn-outline-dark"></button>
 		</div>
 	</div>
 	</form>
+</div>
 		<div class="maps">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52555.58980533962!2d-58.6297628!3d-34.5858404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9b8f8d39399%3A0xaf05e58ee3f95a10!2sVilla%20Bosch%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sbr!4v1626307884814!5m2!1ses!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</div>
@@ -62,6 +69,8 @@
 			<a class="footer__facebook " href="https://www.instagram.com/despierta_que_amanece/" target="_blank"><img src="media/facebook.svg" width="50px" height="50px"></a>
 			<div id="copyright">Copyright&copy; 2021 - Página creada por Leandro Tagliaferro - Todos los derechos reservados</div>
 		<div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+			<script src="js/formulario.js"></script>
 </body>
 </footer>
 </html>
