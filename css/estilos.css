@@ -122,6 +122,14 @@ li {
   color: #033b0a;
 }
 
+#mapa {
+  margin-left: 25%;
+  margin-left: 25%;
+  margin-top: 5%;
+  height: 500px;
+  width: 50%;
+}
+
 .footer {
   background: #eebcbc;
   display: -webkit-box;
@@ -292,12 +300,6 @@ textarea {
   font-weight: 700;
 }
 
-.maps {
-  text-align: center;
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
-}
-
 .table-2 {
   margin-bottom: 6rem;
 }
@@ -450,10 +452,6 @@ textarea {
   .nav-link.dropdown-toggle {
     font-size: 1rem;
     text-align: center;
-  }
-  .maps iframe {
-    width: 90%;
-    height: 90%;
   }
   .navbar-toggler {
     border: none;

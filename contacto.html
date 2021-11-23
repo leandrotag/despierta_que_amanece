@@ -1,67 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-	<title>Contacto</title>
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg container align-self-center navbar-expand-md navbar-light">
-		<a class="align-self-start m-4" href="index.html" target=""><img src="media/logo.gif" width="200px" height="120px"></a>
-		<img src="media/three-dots-vertical.svg" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" width="50px" height="50px">
-		<div class="flexContainer__nav m-5 collapse navbar-collapse align-self-center" id="navbarNav">						
-			<ul class="flexContainer__nav navbar-nav">
-				<li class="nav-item ">
-					<a class="nav-link active" href="colecciones.html">COLECCIONES</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="como_comprar.html">COMO COMPRAR</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="talles.html">TALLES</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contacto.html">CONTACTO</a>
-				</li>
-			</ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <title>Contacto</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg container align-self-center navbar-expand-md navbar-light">
+            <a class="align-self-start m-4" href="index.html" target=""><img src="media/logo.gif" width="200px" height="120px"></a>
+            <img src="media/three-dots-vertical.svg" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" width="50px" height="50px">
+            <div class="flexContainer__nav m-5 collapse navbar-collapse align-self-center" id="navbarNav">						
+                <ul class="flexContainer__nav navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="colecciones.html">COLECCIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="como_comprar.html">COMO COMPRAR</a>
+                    </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="talles.html">TALLES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="header__icon">
+            <a href= "colecciones.html#carroDeCompras" id= "carticon"><img src="media/carrito_2.svg" width="65px" height="65px"></a>
+          </div>
+        </nav>
+        </div>
+		<div class="formulario">
+            <div class="col-md-12">
+                <p class="pb-0 mb-0">Te invitamos a contactarnos, te responderemos a la brevedad.</p>  
+                <p class="text-danger small pt-0 mt-0">*Todos los campos son obligatorios</p>
+                <div class="alert alert-success d-none" id="mensajeExito">Mensaje enviado con éxito</div>
+                <div class="alert alert-danger d-none" id="mensajeError"></div>
+
+				<form id="formulario" >
+                    <div>
+                        <label for="nombre" class="col-form-label col-md-4">Nombre:</label>
+                        <div>
+                            <input type="text" name="nombre" pattern="[A-Za-z]{1,15}" value="" id="nombre"placeholder="Ingresa tu Nombre"  >
+                        </div>
+                    </div>
+					<div>
+                        <label for="apellido" class="col-form-label col-md-4">Apellido:</label>
+                        <div>
+                            <input type="text" name="apellido" pattern="[A-Za-z]{1,15}" value="" id="apellido" placeholder="Ingresa tu Apellido">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email" class="col-form-label col-md-4">E-mail:</label>
+                        <div><input type="email" name="email" value="" id="email" placeholder="Ingresa tu E-mail" ></div>
+                    </div>
+                    <div>
+                        <label for="telefono" class="col-form-label col-md-4">Telefono:</label>
+						<div><input type="text" name="telefono" value="" id="telefono" placeholder="Ingresa tu Telefono"></div>
+					</div>
+						<div class="formulario__textarea">
+                        <label for="mensaje" class="col-form-label col-md-4">Ingresa tu consulta</label>
+					<div><textarea name="mensaje" id="mensaje" placeholder="Ingresa tu consulta"  ></textarea>
+                        </div>
+					</div>
+					<div class="buttons">
+						<div class="formulario__inputs">
+                    <button type="submit" class="btn btn-info">Enviar</button>
+				</div>
+			</div>
+                </form>
+            </div>
+        </div>
+		
     </div>
-    <div class="header__icon">
-      <a href= "colecciones.html#carroDeCompras"><img src="media/carrito_2.svg" width="65px" height="65px"></a>
-    </div>
-	</nav>
-	</div>
-<div class="formulario">
-	<form method="post" id="formulario">
-		<div class="alert alert-success d-none" id="mensajeExito">Mensaje enviado con éxito</div>
-		<div class="alert alert-danger d-none" id="mensajeError"></div>
-			<span>*NOMBRE Y APELLIDO</span>
-			<div><input type="text" name="Nombre y Apellido" id="nombre" value="" placeholder="Nombre y Apellido"></div> <br>
-			<span>*CORREO ELECTRONICO</span>
-			<div><input type="email" name="mail" id="email" value="" placeholder="yosoy@micorreo.com"></div> <br>
-			<span>TELEFONO DE CONTACTO</span>
-			<div><input type="tel" name="Telefono" id="telefono" placeholder="Telefono"></div> <br>
-	</div>
-	<div class="suscripcion"><input type="checkbox" value=""> SUSCRIBITE PARA RECIBIR MAILS INFORMATIVOS Y PROMOCIONES</div>
-	<div class="formulario__textarea"><textarea name="CONSULTA" id="mensaje" name ="mensaje" placeholder="Ingresa tu consulta"></textarea></div>
-	<div class="buttons">
-		<p>* Campos Obligatorios</p>
-		<div class="formulario__inputs">
-			<button type="input" class="btn btn-outline-dark"></button>
-		</div>
-	</div>
-	</form>
-</div>
-		<div class="maps">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52555.58980533962!2d-58.6297628!3d-34.5858404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9b8f8d39399%3A0xaf05e58ee3f95a10!2sVilla%20Bosch%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sbr!4v1626307884814!5m2!1ses!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-	</div>
 	</div>
 	<div class="button">
 		<a class="button__whatsapp" href="https://api.whatsapp.com/send?phone=1149603977" target="_blank"><img src="media/whatsapp.svg" width="50px" height="50px"></a>
 	</div>
+</div>
+<div id="mapa">
+
+</div>
 	<footer class="footer">
 		<div>
 			<p>Seguinos en nuestras redes</p>
@@ -69,8 +102,12 @@
 			<a class="footer__facebook " href="https://www.instagram.com/despierta_que_amanece/" target="_blank"><img src="media/facebook.svg" width="50px" height="50px"></a>
 			<div id="copyright">Copyright&copy; 2021 - Página creada por Leandro Tagliaferro - Todos los derechos reservados</div>
 		<div>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
-			<script src="js/formulario.js"></script>
-</body>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+<script src="js/formulario.js"></script>  
+<script src="js/mapas.js"></script>    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
 </html>

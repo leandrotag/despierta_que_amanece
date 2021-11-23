@@ -14,6 +14,19 @@ if(empty($_POST["nombre"])){
         $error .= 'Nombre está vacio</br>';
     }
 }
+
+//VALIDANDO APELLIDO
+if(empty($_POST["apellido"])){
+    $error = 'Ingresa un apellido </br>';
+}else{
+    $apellido = $_POST["apellido"];
+    $apellido = filter_var($apellido, FILTER_SANITIZE_STRING);
+    $apellido = trim($apellido);
+    if($apellido==''){
+        $error .= 'apellido está vacio</br>';
+    }
+}
+
 //VALIDANDO E-MAIL
 if(empty($_POST["email"])){
     $error .= 'Ingresa un E-mail</br>';
@@ -25,6 +38,19 @@ if(empty($_POST["email"])){
         $email = filter_var($email,FILTER_SANITIZE_EMAIL);
     }
 }
+
+//VALIDANDO TELEFONO
+if(empty($_POST["telefono"])){
+    $error = 'Ingresa un telefono </br>';
+}else{
+    $telefono = $_POST["telefono"];
+    $telefono = filter_var($telefono, FILTER_SANITIZE_STRING);
+    $telefono = trim($telefono);
+    if($telefono==''){
+        $error .= 'telefono está vacio</br>';
+    }
+}
+
 //VALIDANDO MENSAJE
 if(empty($_POST["mensaje"])){
     $error .= 'Ingresa un mensaje </br>';
@@ -45,6 +71,10 @@ $cuerpo .= "\n";
 $cuerpo .= "Email: ";
 $cuerpo .= $email;
 $cuerpo .= "\n";
+
+$cuerpo .= "Telefono: ";
+$cuerpo .= $telefono;
+$cuerpo .= "\n";
  
 $cuerpo .= "Mensaje: ";
 $cuerpo .= $mensaje;
@@ -57,7 +87,7 @@ $asunto = 'Nuevo mensaje de mi sitio web';
 //ENVIAR CORREO
 if($error == ''){
     $success = mail($enviarA,$asunto,$cuerpo,'de: '.$email);
-    echo 'exito';
+    echo 'Mensaje enviado con Exito. Te responderemos a la brevedad';
 }else{
     echo $error;
 }
